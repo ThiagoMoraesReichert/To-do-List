@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" href="./assets/list.png">
+    <title>To do List</title>
+</head>
+<body>
+    <main>
+        <form class="add-form">
+            <input type="text" placeholder="Add task" class="input-task">
+            <button type="submit"><p class="plusButton">+</p></button>
+        </form>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Tasks</th>
+                    <th>Created at</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Task Title</td>
+                    <td>January 01, 2024 at 3:30 PM</td>
+                    <td>
+                        <select>
+                            <option value="pending">pending</option>
+                            <option value="in progress">in progress</option>
+                            <option value="completed">completed</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="btn-action"><span class="material-symbols-outlined">edit</span></button>
+                        <button class="btn-action"><span class="material-symbols-outlined">delete</span></button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
